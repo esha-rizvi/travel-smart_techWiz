@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid"><!--container start-->
+        <div id="background_hotel"><!--background start-->
+            
+            <div class="row"><!--row 1 nav start-->
+                <div class="col-sm-1"></div><!--empty div-->
+                <div class="col-sm-3" id="logo"><!--logo start-->
+                <h3>
+                    <span id="logo_t">T</span>ravel <span id="logo_t">S</span>mart <span id="logo_t">.</span>
+                </h3>
+                </div><!--logo end-->
+                <div class="col-sm-7" id="navbar"><!--navbar start-->
+                    <ul>
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="tour.html"><li>Tour</li></a>
+                        <a href="hotel.html"><li>Hotel</li></a>
+                        <a href="blog.html"><li>Blog</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                        <button id="top_btn">Add Listing</button>
+                    </ul>
+                    <!-- <button id="top_btn">Add Listing</button> -->
+                </div><!--navbar end-->
+                <div class="col-sm-1"></div><!--empty div-->
+                <h1>HOTEL</h1>
+            </div><!--row 1 nav end-->
+            
+        </div><!--background end-->
+            <br><br><br>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+
+                <div id="hotel-page">
+                    <!-- Left Section - Hotel Cards -->
+                    <div id="hotel-cards">
+                        <!-- Card 1 -->
+                        <div id="card-hotel">
+                            <img src="suite.jpg" alt="Hotel Room 1">
+                            <div id="card-hotel-content">
+                                <h3>Deluxe Room</h3>
+                                <div id="stars-hotel">★★★★☆</div>
+                                <div id="price-hotel">$150/night</div>
+                                <p id="description-hotel">A luxurious room with a beautiful city view, perfect for a relaxing getaway.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+            
+                        <!-- Card 2 -->
+                        <div id="card-hotel">
+                            <img src="deluxe.jpg" alt="Hotel Room 2">
+                            <div id="card-hotel-content">
+                                <h3>Suite Room</h3>
+                                <div id="stars-hotel">★★★★★</div>
+                                <div id="price-hotel">$250/night</div>
+                                <p id="description-hotel">Spacious suite with top-notch amenities and a gorgeous sea view.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+            
+                        <!-- Card 3 -->
+                        <div id="card-hotel">
+                            <img src="executive.jpg" alt="Hotel Room 3">
+                            <div id="card-hotel-content">
+                                <h3>Standard Room</h3>
+                                <div id="stars-hotel">★★★☆☆</div>
+                                <div id="price-hotel">$100/night</div>
+                                <p id="description-hotel">A comfortable and affordable option with all the basic amenities.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+            
+                        <!-- Card 4 -->
+                        <div id="card-hotel">
+                            <img src="room.avif" alt="Hotel Room 4">
+                            <div id="card-hotel-content">
+                                <h3>Presidential Suite</h3>
+                                <div id="stars-hotel">★★★★★</div>
+                                <div id="price-hotel">$500/night</div>
+                                <p id="description-hotel">The ultimate luxury experience with private pool and concierge services.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+            
+                        <!-- Card 5 -->
+                        <div id="card-hotel">
+                            <img src="standrd.jpg" alt="Hotel Room 5">
+                            <div id="card-hotel-content">
+                                <h3>Executive Room</h3>
+                                <div id="stars-hotel">★★★★☆</div>
+                                <div id="price-hotel">$180/night</div>
+                                <p id="description-hotel">Ideal for business travelers, featuring a workspace and high-speed Wi-Fi.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+            
+                        <!-- Card 6 -->
+                        <div id="card-hotel">
+                            <img src="presidential.jpg" alt="Hotel Room 6">
+                            <div id="card-hotel-content">
+                                <h3>Family Room</h3>
+                                <div id="stars-hotel">★★★★☆</div>
+                                <div id="price-hotel">$200/night</div>
+                                <p id="description-hotel">A spacious room with extra beds, perfect for family vacations.</p>
+                                <a href="#" id="book-btn-hotel">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Right Section - Filter -->
+                    <div id="filter-hotel-section">
+                        <h2>Filter Rooms</h2>
+            
+                        <!-- Sort by Room Size -->
+                        <label for="room-size">Sort by Room Size</label>
+                        <select id="room-size">
+                            <option value="all">All Sizes</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+            
+                        <!-- Sort by Price -->
+                        <label for="price">Sort by Price</label>
+                        <input type="range" id="price" min="50" max="500" step="50">
+            
+                        <!-- Sort by Location -->
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="any">Any</option>
+                            <option value="city">City Center</option>
+                            <option value="beach">Beachfront</option>
+                            <option value="mountain">Mountain View</option>
+                        </select>
+            
+                        <button type="button">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+            <br><br><br>
+
+
+            <!--footer start-->
+        <div class="row" id="footer">
+            <div class="col-sm-1"></div><!--empty div-->
+            <div class="col-sm-3" id="about_tt">
+                <p><b>
+                    About
+                </b>
+                <br><br><!--to be changed-->
+                "Your all-in-one travel partner! Find top hotels, reliable car rentals, and the best restaurants—all in one place. Travel smarter and explore more with ease!"
+
+                <br><br><br><br>
+                <strong>
+                    Connect
+                </strong> <br><br>
+               <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"> <i class="fa-brands fa-facebook-messenger"></i></a>
+               <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+               <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+               <a href=""><i class="fa-solid fa-phone"></i></a>
+                </p>
+            </div>
+            <div class="col-sm-2" id="links">
+                <p><b>
+                    Navigation
+                </b>
+                </p>
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="tour.html"><li>Tour</li></a>
+                    <a href="hotel.html"><li>Hotel</li></a>
+                    <a href="blog.html"><li>Blog</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="gallery">
+                <p><b>
+                    Gallery
+                </b>
+                </p>
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="busy city.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="r4.jpg" height="65"  width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="b32.jpg" alt="" height="65" width="65" >
+                    </div>
+                </div>
+                
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="canada.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="r2.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="paris.avif" alt="" height="65" width="65" >
+                    </div>
+                </div>
+            </div><!--gallery end-->
+            <div class="col-sm-2" id="contact">
+                <p><b>
+                    Contact
+                </b>
+                </p>
+                <span>
+                   <h5> 43 Raymouth Rd. Baltemoer, London 3910 </h5> <br>
+                        +1(123)-456-7890 <br>
+                        +1(123)-456-7890 <br>
+                        <br><br>
+                      <h6>  info@mydomain.com </h6> <br>
+                </span>
+            </div>
+            <div class="col-sm-1"></div><!--empty div-->
+
+        </div>
+        <div class="row" id="footer_end">
+            <div class="col-sm-12">
+                <span>
+                    Copyright ©2024 All rights reserved | This website design is made with
+                    <i class="fa-solid fa-heart"></i> by 
+                </span>
+            </div>
+        </div>
+        <!--footer end-->
+    </div><!--container end-->
+</body>
+</html>

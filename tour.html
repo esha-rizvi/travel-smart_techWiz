@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid"><!--container start-->
+        <div id="background_tour"><!--background start-->
+            
+            <div class="row"><!--row 1 nav start-->
+                <div class="col-sm-1"></div><!--empty div-->
+                <div class="col-sm-3" id="logo"><!--logo start-->
+                <h3>
+                    <span id="logo_t">T</span>ravel <span id="logo_t">S</span>mart <span id="logo_t">.</span>
+                </h3>
+                </div><!--logo end-->
+                <div class="col-sm-7" id="navbar"><!--navbar start-->
+                    <ul>
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="tour.html"><li>Tour</li></a>
+                        <a href="hotel.html"><li>Hotel</li></a>
+                        <a href="blog.html"><li>Blog</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                        <button id="top_btn">Add Listing</button>
+                    </ul>
+                    <!-- <button id="top_btn">Add Listing</button> -->
+                </div><!--navbar end-->
+                <h1>TOUR</h1>
+                <div class="col-sm-1"></div><!--empty div-->
+            </div><!--row 1 nav end-->
+            
+        </div><!--background end-->
+            <br><br><br>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+            <div id="tour-page">
+                <!-- Left Section - Tour Cards -->
+                <div id="tour-cards">
+                    <!-- Card 1 -->
+                    <div id="card-tour">
+                        <img src="a2.jpg" alt="Tour 1">
+                        <div id="card-tour-content">
+                            <h3>City Exploration Tour</h3>
+                            <div id="stars-tour">★★★★☆</div>
+                            <div id="price-tour">$120/person</div>
+                            <p id="description-tour">Discover the beauty of the city with our guided exploration tour.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div id="card-tour">
+                        <img src="beach.jpg" alt="Tour 2">
+                        <div id="card-tour-content">
+                            <h3>Beach Adventure Tour</h3>
+                            <div id="stars-tour">★★★★★</div>
+                            <div id="price-tour">$180/person</div>
+                            <p id="description-tour">Experience the ultimate beach adventure with water sports and relaxation.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div id="card-tour">
+                        <img src="mountain.jpg" alt="Tour 3">
+                        <div id="card-tour-content">
+                            <h3>Mountain Hiking Tour</h3>
+                            <div id="stars-tour">★★★★★</div>
+                            <div id="price-tour">$150/person</div>
+                            <p id="description-tour">Join our exciting mountain hiking tour for breathtaking views.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div id="card-tour">
+                        <img src="desert.jpg" alt="Tour 4">
+                        <div id="card-tour-content">
+                            <h3>Desert Safari Tour</h3>
+                            <div id="stars-tour">★★★★☆</div>
+                            <div id="price-tour">$200/person</div>
+                            <p id="description-tour">Experience the thrill of the desert with our safari adventure.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 5 -->
+                    <div id="card-tour">
+                        <img src="wild.avif" alt="Tour 5">
+                        <div id="card-tour-content">
+                            <h3>Wildlife Safari Tour</h3>
+                            <div id="stars-tour">★★★★☆</div>
+                            <div id="price-tour">$220/person</div>
+                            <p id="description-tour">Explore the wilderness and get close to nature with our wildlife safari.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+        
+                    <!-- Card 6 -->
+                    <div id="card-tour">
+                        <img src="historic.jpg" alt="Tour 6">
+                        <div id="card-tour-content">
+                            <h3>Historical Sites Tour</h3>
+                            <div id="stars-tour">★★★☆☆</div>
+                            <div id="price-tour">$100/person</div>
+                            <p id="description-tour">Discover ancient history and culture with a visit to historical sites.</p>
+                            <a href="#" id="book-btn-tour">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Section - Filter -->
+                <div id="filter-tour-section">
+                    <h2>Filter Tours</h2>
+        
+                    <!-- Sort by Tour Type -->
+                    <label for="tour-type">Sort by Tour Type</label>
+                    <select id="tour-type">
+                        <option value="all">All Types</option>
+                        <option value="city">City</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="desert">Desert</option>
+                        <option value="wildlife">Wildlife</option>
+                    </select>
+        
+                    <!-- Sort by Duration -->
+                    <label for="duration">Sort by Duration</label>
+                    <input type="range" id="duration" min="1" max="10" step="1">
+        
+                    <!-- Sort by Price -->
+                    <label for="price">Sort by Price</label>
+                    <input type="range" id="price" min="50" max="500" step="50">
+        
+                    <button type="button">Apply Filters</button>
+                </div>
+            </div>
+        </div><!--column end-->
+
+            <div class="col-sm-1"></div>
+
+        </div><!--row end-->
+        
+            <br><br><br><br><br>
+
+
+            <!--footer start-->
+        <div class="row" id="footer">
+            <div class="col-sm-1"></div><!--empty div-->
+            <div class="col-sm-3" id="about_tt">
+                <p><b>
+                    About
+                </b>
+                <br><br><!--to be changed-->
+                "Your all-in-one travel partner! Find top hotels, reliable car rentals, and the best restaurants—all in one place. Travel smarter and explore more with ease!"
+
+                <br><br><br><br>
+                <strong>
+                    Connect
+                </strong> <br><br>
+               <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"> <i class="fa-brands fa-facebook-messenger"></i></a>
+               <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+               <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+               <a href=""><i class="fa-solid fa-phone"></i></a>
+                </p>
+            </div>
+            <div class="col-sm-2" id="links">
+                <p><b>
+                    Navigation
+                </b>
+                </p>
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="tour.html"><li>Tour</li></a>
+                        <a href="hotel.html"><li>Hotel</li></a>
+                        <a href="blog.html"><li>Blog</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="gallery">
+                <p><b>
+                    Gallery
+                </b>
+                </p>
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="busy city.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="r4.jpg" height="65"  width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="b32.jpg" alt="" height="65" width="65" >
+                    </div>
+                </div>
+                
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="canada.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="r2.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="paris.avif" alt="" height="65" width="65" >
+                    </div>
+                </div>
+            </div><!--gallery end-->
+            <div class="col-sm-2" id="contact">
+                <p><b>
+                    Contact
+                </b>
+                </p>
+                <span>
+                   <h5> 43 Raymouth Rd. Baltemoer, London 3910 </h5> <br>
+                        +1(123)-456-7890 <br>
+                        +1(123)-456-7890 <br>
+                        <br><br>
+                      <h6>  info@mydomain.com </h6> <br>
+                </span>
+            </div>
+            <div class="col-sm-1"></div><!--empty div-->
+
+        </div>
+        <div class="row" id="footer_end">
+            <div class="col-sm-12">
+                <span>
+                    Copyright ©2024 All rights reserved | This website design is made with
+                    <i class="fa-solid fa-heart"></i> by 
+                </span>
+            </div>
+        </div>
+        <!--footer end-->
+    </div><!--container end-->
+</body>
+</html>
